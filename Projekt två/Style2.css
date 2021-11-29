@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.one {
+  position: absolute;
+  height: 2vw;
+  width: 1000;
+  padding: 45px;
+  margin: 0;
+  background-color: white;
+  font: 8px;
+}
+
+.-ul {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  gap: 2em;
+}
+.--ul {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  gap: 1em;
+}
+.---ul {
+  font-size: 30px;
+  display: flex;
+  top: 0;
+  right: 0%;
+  gap: 1em;
+}
+
+.buy {
+  bottom: 0%;
+  right: 0%;
+  margin: 0%;
+  padding: 45px;
+  width: 100;
+  height: 4vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: black;
+  display: inline-block;
+  flex-direction: row;
+  width: auto;
+  text-decoration: none;
+}
+
+.scroll-container {
+  width: auto;
+  height: auto;
+  overflow-x: scroll;
+  scroll-behavior: auto;
+}
+
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.First-Product {
+    left: 0%;
+}
+
+.Second-Product{
+    left: 0%;
+}
+
+.Third-Product{
+    left: 0%;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  background: linear-gradient(
+    90deg,
+    rgba(223, 238, 245, 1) 0%,
+    rgba(212, 213, 238, 1) 100%
+  );
+  overflow-x: scroll;
+  display: flex;
+  overflow-y: hidden;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Container section {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-margin-left: 100px;
+}
+
+.Container section:nth-of-type(1) {
+  background-color: linear-gradient(90deg, #9a825d) 0%(#f7f8f6), 100%;
+}
+.Container section:nth-of-type(2) {
+  background-color: linear-gradient(90deg,#421314 ), 0%, (#241d20), 100%;
+}
+.Container section:nth-of-type(3) {
+  background-color: linear-gradient(90deg, #C71F19), 0%, (#241d20), 100%;
+}
